@@ -1,0 +1,39 @@
+{
+  "stuffs": [
+    {
+      "id": 1,
+      "name": "thing 1",
+      "doesItBlend": false
+    },
+    {
+      "id": 2,
+      "name": "thing 2",
+      "doesItBlend": true
+    },
+    {
+      "id": 3,
+      "name": "thing 3",
+      "doesItBlend": false
+    },
+    {
+      "id": 4,
+      "name": "thing 4",
+      "doesItBlend": true
+    },
+    {
+      "id": 5,
+      "name": "thing 5",
+      "doesItBlend": false
+    },
+    {
+      "name": "thing 6",
+      "doesItBlend": false,
+      "id": 6
+    },
+    {
+      "name": "thing 7",
+      "doesItBlend": true,
+      "id": 7
+    }
+  ]
+}
