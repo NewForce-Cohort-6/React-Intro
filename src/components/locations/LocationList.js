@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react"
-
+import { LocationCard } from "./LocationsCard"
 
 
 
@@ -24,18 +24,7 @@ export const LocationList = () => {
         <>
         <h1>Locations</h1>
         {
-            locations.map(singleLocation => <div>
-                <h3>{singleLocation.name}</h3>
-                <p>{singleLocation.address}</p>
-                <div>
-                    <h4>Animals:</h4>
-                    { singleLocation.animals.length === 0?
-                     <p>No current animals</p>
-                    :
-                    singleLocation?.animals.map(singleAnimal => <p>{singleAnimal.name}</p>)
-                    }
-                </div>
-            </div>)
+             locations.map( taco => <LocationCard key={taco.id} singleLocation={taco}/>)
         }
         </>
     )

@@ -2,8 +2,9 @@ import {Routes, Route} from 'react-router-dom'
 import { StuffsList } from './stuffs/StuffsList'
 import { StuffForm } from './stuffs/StuffForm'
 import { ToppingsList } from './toppings/ToppingsList'
-import { AnimalList } from './animals/AnimalList'
 import { LocationList } from './locations/LocationList'
+import { AnimalContainer } from './animals/AnimalContainer'
+import { LocationDetail } from './locations/LocationDetail'
 
 
 
@@ -29,8 +30,10 @@ export const ApplicationViews = () => {
             {/* Route 4 Create */}
         {/* <Route path= "/stuffs/create" element={<StuffForm />} /> */}
 
-        <Route path= "/animals" element={<AnimalList />} />
+        <Route path= "/animals" element={<AnimalContainer/>} />
         <Route path= "/locations" element={<LocationList />} />
+
+        <Route path= "/locations/detail/:locationId" element={<LocationDetail />} />
 
 
 
