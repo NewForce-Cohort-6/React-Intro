@@ -34,10 +34,7 @@ export const ApplicationViews = () => {
         <Route path= "/locations" element={<LocationList />} />
 
         <Route path= "/locations/detail/:locationId" element={<LocationDetail />} />
-
-
-
-
+        
         </Routes>
         </>
     )

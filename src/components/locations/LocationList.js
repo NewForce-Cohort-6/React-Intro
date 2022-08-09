@@ -22,10 +22,13 @@ export const LocationList = () => {
 
     return(
         <>
+        <div className="ms-3">
         <h1>Locations</h1>
         {
-             locations.map( taco => <LocationCard key={taco.id} singleLocation={taco}/>)
+            locations.map( taco => <LocationCard key={taco.id} singleLocation={taco}/>)
         }
+        </div>
+
         </>
     )
 }

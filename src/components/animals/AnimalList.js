@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from "react"
 
+import Form from 'react-bootstrap/Form';
+
 
 
 
@@ -8,6 +10,7 @@ export const AnimalList = ({animalSearchTerm}) => {
 
     const [animals, setAnimals] = useState([])
     const [searchedAnimals, setSearchedAnimals] = useState([])
+    const [animalselected, setAnimalSelected] = useState("")
 
 
 
@@ -34,6 +37,8 @@ export const AnimalList = ({animalSearchTerm}) => {
 
     return(
         <>
+        <div className="ms-3">
+
         <h1>Animals</h1>
         {
             searchedAnimals.map(singleAnimal => <div>
@@ -42,6 +47,20 @@ export const AnimalList = ({animalSearchTerm}) => {
                 <p>Location: {singleAnimal?.location.name}</p>
             </div>)
         }
+
+
+
+    <Form.Select onChange={e => {
+        setAnimalSelected(e.target.value)
+    }} value={animalselected} >
+        {
+            animals.map(x => <option >{x.name}</option>)
+        }
+
+    </Form.Select>
+
+
+        </div>
         </>
     )
 }

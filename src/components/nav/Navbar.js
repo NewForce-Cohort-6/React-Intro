@@ -1,31 +1,32 @@
 import { Link } from "react-router-dom"
-import "./NavBar.css"
+import Container from 'react-bootstrap/Container'
+import Nav from 'react-bootstrap/Nav'
+import Navbar from 'react-bootstrap/Navbar'
 
 
-export const Navbar = () => {
+
+export const Navbarr = () => {
   return (
     <>
-      <header>
-        <nav>
-          <ul>
-            <Link to="/">
-              <li>Home</li>
-            </Link>
-            <Link to="/toppings">
-              <li>Toppings</li>
-            </Link>
-            {/* <Link to="/stuffs">
-              <li>Stuffs</li>
-            </Link> */}
-            <Link to="/animals">
-              <li>Animals</li>
-            </Link>
-            <Link to="/locations">
-              <li>Locations</li>
-            </Link>
-          </ul>
-        </nav>
-      </header>
+
+      <Navbar bg="primary" variant="dark">
+        <Container>
+          <Navbar.Brand href="/">Navbar</Navbar.Brand>
+          <Nav className="me-auto">
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/toppings">Toppings</Nav.Link>
+            <Nav.Link href="/animals">Animals</Nav.Link>
+            <Nav.Link href="/locations">Locations</Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
+
+
+
+
+
+
+
     </>
   );
 };
