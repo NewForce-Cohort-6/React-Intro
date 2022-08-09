@@ -17,6 +17,7 @@ export const Navbarr = () => {
             <Nav.Link href="/toppings">Toppings</Nav.Link>
             <Nav.Link href="/animals">Animals</Nav.Link>
             <Nav.Link href="/locations">Locations</Nav.Link>
+            <Nav.Link href="/animals/register">Register a New Animal</Nav.Link>
           </Nav>
         </Container>
       </Navbar>

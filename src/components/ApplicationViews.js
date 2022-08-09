@@ -5,19 +5,12 @@ import { ToppingsList } from './toppings/ToppingsList'
 import { LocationList } from './locations/LocationList'
 import { AnimalContainer } from './animals/AnimalContainer'
 import { LocationDetail } from './locations/LocationDetail'
+import { AnimalForm } from './animals/AnimalForm'
 
 
 
 
 export const ApplicationViews = () => {
-
-
-
-
-
-
-
-
     return(
         <>
         <Routes>
@@ -34,7 +27,7 @@ export const ApplicationViews = () => {
         <Route path= "/locations" element={<LocationList />} />
 
         <Route path= "/locations/detail/:locationId" element={<LocationDetail />} />
-        
+        <Route path="/animals/register" element={<AnimalForm/>} />
         </Routes>
         </>
     )
